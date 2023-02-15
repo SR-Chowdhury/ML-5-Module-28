@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank | Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100">
+
+    <div class="container p-5">
+        <h1 class="text-center text-5xl font-extrabold text-slate-800 mt-5 mb-9">Welcome, Do what you need to do!</h1>
+        <div class="grid grid-cols-3 gap-x-10 w-3/4 mx-auto text-white">
+            <div class="px-5 py-9 text-center bg-red-800 rounded">
+                <h3 class="text-2xl">Deposit Money</h3>
+                <h1 class="text-2xl">$<span id="prevDeposit">20</span></h1>
+            </div>
+            <div class="px-5 py-9 text-center bg-orange-800 rounded">
+                <h3 class="text-2xl">Withdraw Money</h3>
+                <h1 class="text-2xl">$<span id="prevWithdraw">00</span></h1>
+            </div>
+            <div class="px-5 py-9 text-center bg-lime-800 rounded">
+                <h3 class="text-2xl">Total Balance</h3>
+                <h1 class="text-2xl">$<span id="prevTotal">1000</span></h1>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-10 w-3/4 mx-auto mt-10">
+            <div class="px-5 py-9 text-center bg-red-700 rounded">
+                <h3 class="text-2xl mb-3 text-white">Deposit Money</h3>
+                <div class="login-container inline">
+                    <input id="depositId" class="py-2 px-2" type="text" placeholder="How much you want?">
+                    <input id="depositSubmitBtn" type="Submit" class="py-2 cursor-pointer bg-slate-200 text-slate-800 font-extrabold px-5">
+                </div>
+            </div>
+            <div class="px-5 py-9 text-center bg-orange-700 rounded ">
+                <h3 class="text-2xl mb-3 text-white">Withdraw Money</h3>
+                <div class="login-container inline">
+                    <input id="withdrawId" class="py-2 px-2" type="text" placeholder="How much you want?">
+                    <input id="withdrawSubmitBtn" type="Submit" class="py-2 cursor-pointer bg-slate-200 text-slate-800 font-extrabold px-5">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/deposit.js"></script>
+    <script src="./js/withdraw.js"></script>
+</body>
+</html>
